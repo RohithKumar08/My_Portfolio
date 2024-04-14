@@ -1,346 +1,171 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <style>#A a i{width: 40px;height: 40px;color: whitesmoke;font-size: 80px;}</style>
-    <title>RohithKumar T</title>
-    <link rel="stylesheet" href="make.css">
-    <script src="https://kit.fontawesome.com/238490710e.js" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z9C218CY9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-1Z9C218CY9');
-    </script>
+    <style>
+        #A a i {
+            width: 40px;
+            height: 40px;
+            color: whitesmoke;
+            font-size: 80px;
+        }
+    </style>
+    <title>P O R T F O L I O</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+</head>
+
 <body>
-    <nav class = "navbar">
-        <ul>
-            <li id="H">PortFolio - Rohith</li>
-            <li><a href="#Myself">Myself  </a></li>
-            <li><a href="#AboutMe">About Me  </a></li>
-            <li><a href="#Personal_Skill">Personal Skills</a></li>
-            <li><a href="#Education"> Education</a></li>
-            <li><a href="#ContactMe">Contact Me</a></li>
-        </ul>
-    </nav>
-    
-    <section id="Myself">
-        <div class="main">
-        </div>
-    </section>
 
-    <section id="AboutMe">
-        <h2 class="headings">ABOUT ME</h2>
-        <div id="zyx">
-            <div id="Pic">
-                <img src="My_Pic.jpg" alt="Thats My Picture,Hehe!">
-                <div id="intro">
-                    <h2>ROHITH KUMAR TETALI</h2>
-                    <div class="Hi">
-                        <p>
-                        <ul>
-                            <li class="R">a. I am Currently studying 2nd Year.</li>
-                            <li class="R">b. I am Quick Learner who gets motivated, when learned Something New.</li>
-                            <li class="R">c. I am studying Web Development, to gain knowledge on how a website Works.</li>
-                            <li class="R">d. My special Interest goes to learning Data Structures and Algorithms, and am Aiming to
-                                become a Data Scientist.</li>
-                            <li class="R">e. I work to Learn, Wanna Work include Me.</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
+    <!-- NAVIGATION BAR -->
+
+    <div class="nav-fixed">
+        <nav class="navbar">
+            <div id="trapezoid">
+                <a href="#Home" onclick="showPage('Home')">Rohith Kumar <span>Tetali</span></a>
+                <a href="#About" onclick="showPage('About')">About</a>
+                <a href="#Skills" onclick="showPage('Skills')">Skills</a>
+                <a href="#Projects" onclick="showPage('Projects')">Projects</a>
+                <a class="subnavbtn" href="https://drive.google.com/file/d/1a2aDKd1SiNF1XLqAFFIe-LYP2xACFUWi/view?usp=sharing">View CV</a>
+                <a href="#Contact" onclick="showPage('Contact')">Contact</a>
             </div>
-        </div>
-    </section>
+        </nav>
+    </div>
 
-    <section id="Personal_Skill">
-        <div class="personalskill">
-            <h1 class="headings">Personal Skills</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="leftbox">
-                <h2 class="hii"> Web Development</h2>
-                <br>
-                <h2>HTML5</h2>
-                <div class="container">
-                    <div class="skills html">80%</div>
-                </div>
+    <!-- COMMON DIV FOR ALL SECTIONS  -->
 
-                <h2>CSS</h2>
-                <div class="container">
-                    <div class="skills css">80%</div>
+    <div class="common-div">
+            <section id="Home" class="home-text page">
+                <h3 class="text1 slideleft"><span>Introduction</span></h3>
+                <hr class="slideleft">
+                <h1 class="text2 slideleft">I'm Rohith,</h1>
+                <h2 class="text3 slideleft">A Computer Science Graduate</h2>
+                <hr class="slideleft">
+                <p id="new-p" class="slideleft">There is this one quote from an anime called <span>One Piece</span> that inspires me a lot, <br><span>"You Need To Accept The Fact That You're Not The Best, But The Least You Can Do Is Being Better Than Your Previous Self !"</span></p>
+            </section>
+            <section id="About" class="about-text page">
+                <h1><span>About Me</span></h1>
+                <hr>
+                <p id="new-p">Welcome!, I'm Rohith, this is my Portfolio.</p>
+                <p id="new-p">I’m a studious person and I'm aiming to learn lot more in the future. I’m currently looking further for opportunities to enhance my skills and build a career for myself. If you are looking for me, I'm here for you.</p>
+                <p id="new-p">I have recently completed my bachelor's degree on Computer Science Engineering @Velammal Engineering College in Chennai. Throughout my studies, I have been focusing on Java Programming with practical knowledge.</p>
+                <p id="new-p">I like simplicity and I prefer my projects being simple and easy to use with higher efficiency. My website might be simple, but the people who access my website will be able to understand the content I intended to deliver.</p>
+                <h1><span>Education History</span></h1>
+                <hr>
+                <p id="new-p">10TH Standard - <span>77 / 100 % </span><br>School - Velammal Vidhyashram, Surapet, Chennai.</p>
+                <p id="new-p">12TH Standard - <span>79 / 100 % </span><br>School - Velammal Vidhyashram, Surapet, Chennai.</p>
+                <p id="new-p">Under Graduation - CGPA - <span>8.71 / 10 </span><br>College - Velammal Engineering College, Surapet, Chennai.</p>
+            </section>
+        <section class="skills-text page" id="Skills">
+            <h1><span>Skills</span></h1>
+            <hr>
+            <div class="main">
+                <div class="sub-title">
+                    <h2>W e b&nbsp;&nbsp;D e v e l o p m e n t</h2>
                 </div>
-        
-                <h2>Javascript</h2>
-                <div class="container">
-                    <div class="skills javascript">40%</div>
-                </div>
-        
-                <h2>SQL</h2>
-                <div class="container">
-                    <div class="skills sql">70%</div>
-                </div>
-            </div>
-
-            <div id="rightbox">
-                <h2 class="hii">Programming Language</h2>
-                <br>
-                <h2>Python</h2>
-                <div class="container">
-                    <div class="skills python">60%</div>
-                </div>
-        
-                <h2>C++</h2>
-                <div class="container">
-                    <div class="skills cpp">90%</div>
-                </div>
-        
-                <h2>C</h2>
-                <div class="container">
-                    <div class="skills c">90%</div>
-                </div>
-        
-                <h2>Ruby</h2>
-                <div class="container">
-                    <div class="skills ruby">50%</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-         <!-- <section id="education">
-            
-
-            <h1 class="headings">EDUCATION</h1>
-            <div class="link">
-                <button class="btn" id="btnId" onclick="show()">S S L C</button>
-                <div id="AB">
-                    <div id="edu" style="display: none;">
-                        <div>
-                            <p>
-                            <ul>
-                                <li>
-                                    <h2>VELAMMAL VIDHYASHRAM, SURAPET</h2>
-                                </li>
-                                <li>
-                                    <h3>10TH Mark : 77%</h3>
-                                </li>
-                            </ul>
-                            </p>
+                <div class="block">
+                    <li>
+                        <h2>HTML</h2>
+                        <div class="bar">
+                            <span class="html"></span>
                         </div>
-                    </div>
-                </div>        
+                    </li>
+                    <li>
+                        <h2>CSS</h2>
+                        <span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li>
+                        <h2>JAVASCRIPT</h2>
+                        <span class="bar"><span class="javascript"></span></span>
+                    </li>
+                    <li>
+                        <h2>SQL</h2>
+                        <span class="bar"><span class="sql"></span></span>
+                    </li>
+                </div>
+                <div class="sub-title">
+                    <h2>P r o g r a m m i n g&nbsp;&nbsp;L a n g u a g e s</h2>
+                </div>
+
+                <div class="block">
+                    <li>
+                        <h2>JAVA</h2>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                    <li>
+                        <h2>C</h2>
+                        <span class="bar"><span class="c"></span></span>
+                    </li>
+                    <li>
+                        <h2>EMBEDDED C (Basics)</h2>
+                        <span class="bar"><span class="embedded-c"></span></span>
+                    </li>
+                </div>
             </div>
-            
-            <div class="link">
-                <button class="btn" id="btnId1" onclick="show1()">HIGHER SECONDARY</button>
-                <div id="AB">
-                    <div id="edu1" style="display: none;">
-                        <div>
-                            <p>
-                            <ul>
-                                <li>
-                                    <h2>VELAMMAL VIDHYASHRAM, SURAPET</h2>
-                                </li>
-                                <li>
-                                    <h3>12TH Mark : 79%</h3>
-                                </li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>       
+        </section>
+        <section id="Projects" class="project-text page">
+            <h1><span>LeetCode</span></h1>
+            <hr>
+            <p>This is the coding platform where I have worked on improving my Java Programming skills, <a
+                class="link-display" href="https://leetcode.com/Rohith_Kumar_Tetali/" target="_blank">Click Here</a> to view.
+            </p>
+            <h1><span>Projects</span></h1>
+            <hr>
+            <h2>1. Basic Calculator</h2>
+            <p>This is a simple project that does addition, subraction, multiplication, and division and various
+                simple operations such as backspace, clearing the screen, etc..<a class="link-display"
+                    href="https://rohithkumar08.github.io/Calculator/" target="_blank">Click Here</a> to view.
+            </p>
+            <br>
+            <h2>2. Age Calculator</h2>
+            <p>This is a simple project that helps a user calculate his/her age. User is asked for an input and
+                the website displays the age on the screen,<a class="link-display"
+                    href="https://rohithkumar08.github.io/Age_Calculator/" target="_blank">Click Here</a> to view.
+            </p>
+            <br>
+            <h2>3. Tip Calculator</h2>
+            <p>This is a simple project that helps user calculate the bill and generates how much tip the
+                customer should provide,<a class="link-display"
+                    href="https://rohithkumar08.github.io/Tip_Calculator/" target="_blank">Click Here</a> to view.
+            </p>
+            <br>
+            <h2>4. Centralized Street Light Fault Detection and Location Tracking</h2>
+            <p>This is a Hardware and Software integrated project. In this project, instead of raising a
+                complaint regarding the fault in street lights, we can use LDR's that detect the light emmited
+                and not emmited from street lights and update it in a website along with the location of the
+                street lights,<a class="link-display" href="https://rohithkumar08.github.io/Calculator/"
+                    target="_blank">Click Here</a> to view.
+            </p>
+            <br>
+        </section>
+        <section class="Contact-text page" id="Contact">
+            <h1><span>Contact Me</span></h1>
+            <hr>
+            <div class="main">
+                <form class="form" id="my-form" action="https://formspree.io/f/mbjwoeov" method="post">
+                    <input type="text" name="Name" id="name" placeholder="Enter Name" class="textbox" required>
+                    <input type="email" name="Email" id="email" placeholder="Enter E-mail" class="textbox" required>
+                    <input type="number" name="Phoneno" id="phone" placeholder="Enter phone number" class="textbox" required>
+                    <textarea id="message" name="Message" rows="10" class="textbox textarea" placeholder="Enter message " required></textarea>
+                    <input type="submit" value="Submit" class="btn">
+                </form>
             </div>
-            
-            <div class="link">
-                <button class="btn" id="btnId2" onclick="show2()">UNDER GRADUATE</button>
-                <div id="AB">
-                    <div id="edu2" style="display: none;">
-                        <div>
-                            <p>
-                            <ul>
-                                <li>
-                                    <h2>VELAMMAL ENGINEERING COLLEGE, SURAPET</h2>
-                                </li>
-                                <li>
-                                    <h3>II YEAR STUDENT</h3>
-                                </li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
+            <div class="footer">
+                <h2>Thanks For Spending Your Time in My Website</h2>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/rohith-kumar-tetali-04a647296/"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://instagram.com/_rohith_kumar__?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/RohithKumar08"><i class="fa fa-github"></i></a>
+                    <a href="https://twitter.com/_rohith_kumar__"><i class="fa fa-twitter-square"></i></a>
                 </div>
-                    
-            </div> 
-            
-        </section>  -->
-
-    <section id="Education">
-        <h1 class="headings">EDUCATION</h1>
-        <br>
-        <br>
-        <br>
-            <div id="AB">
-                <div id="edu">
-                    <div>
-                        <p>
-                        <ul>
-                            <li class="R">
-                                <h2 class="Z">VELAMMAL VIDHYASHRAM, SURAPET</h2>
-                            </li>
-                            <br>
-                            <li class="R">
-                                <h3 class="Z">10TH Mark : 77%</h3>
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
+                <div class="copyright">
+                    <p id="Copy">CopyRights &copy; 2022 | Privacy Policy</p>
                 </div>
-                <br>
-                <br>
-                <div id="edu1">
-                    <div>
-                        <p>
-                        <ul>
-                            <li class="R">
-                                <h2 class="Z">VELAMMAL VIDHYASHRAM, SURAPET</h2>
-                            </li>
-                            <br>
-                            <li class="R">
-                                <h3 class="Z">12TH Mark : 79%</h3>
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div id="edu2">
-                    <div>
-                        <p>
-                        <ul>
-                            <li class="R">
-                                <h2 class="Z">VELAMMAL ENGINEERING COLLEGE, SURAPET</h2>
-                            </li>
-                            <br>
-                            <li class="R">
-                                <h3 class="Z">II YEAR STUDENT</h3>
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>       
-    </section> 
-    <br>
-    <br>
-    <br>
-    <section id="ContactMe">
-        <h2 class="headings">CONTACT ME</h2>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="xyz">
-            <h2 id="Contact">Contact Details</h2>
-            <br>
-            <br>
-            <br>
-            <form action="">
-                <label for="Name"></label>
-                <divide class="King">
-                    <input type="text" class="Hell" name="name" id="name" placeholder="Enter Your Name Please" />
-                    <br>
-                    <label for="email"></label>
-                    <input type="text" class="Hell" name="email" id="email" placeholder="Enter Your Email Pleasse" />
-                </divide>
-                <divide class="King">
-                    <br>
-                    <textarea name="Description" class="Hell" id="" cols="30" rows="20"
-                        placeholder="FeedBack on My PortFolio"></textarea>
-                    <br>
-                </divide>
-                <divide class="King1"><button class="Hell">Submit</button></divide>
-                <br>
-                <br>
-                <br>
-            </form>
-        </div>   
-        
-            <br>
-            <div id="A">
-                <ul class="ABC">
-                    <a href="https://www.linkedin.com/in/rohith-kumar-tetali-1ab148173/"> <i class="fa-brands fa-linkedin"></i> </a>
-                    <a href="https://instagram.com/_rohith_kumar__?utm_medium=copy_link" target="_blank"> <i
-                            class="fa-brands fa-instagram"></i> </a>
-                    <a href="https://www.hackerrank.com/rohithkumar412_t"> <i class="fa-brands fa-hackerrank"></i> </a>
-                    <a href="https://github.com/RohithKumar08"> <i class="fab fa-github"></i> </a>
-                </ul>
             </div>
-            <br>
-            <br>
-            <p id="Copy">CopyRights&copy;2022 | Privacy Policy</p>
-    </section>
-    
-    <!-- <script>
-
-        function show() {
-            var p1 = document.getElementById('edu');
-            var p2 = document.getElementById('edu1');
-            var p3 = document.getElementById('edu2');
-
-            if (p1.style.display == "none") {
-                p1.style.display = "block";
-                p2.style.display = "none";
-                p3.style.display = "none";
-            } else {
-                p1.style.display = "none";
-                p2.style.display = "none";
-                p3.style.display = "none";
-            }
-        }
-
-        function show1() {
-            var p2 = document.getElementById('edu1');
-            var p1 = document.getElementById('edu');
-            var p3 = document.getElementById('edu2');
-
-            if (p2.style.display == "none") {
-                p1.style.display = "none";
-                p2.style.display = "block";
-                p3.style.display = "none";
-            } else {
-                p2.style.display = "none";
-                p1.style.display = "none";
-                p3.style.display = "none";
-            }
-        }
-
-        function show2() {
-            var p2 = document.getElementById('edu1');
-            var p1 = document.getElementById('edu');
-            var p3 = document.getElementById('edu2');
-
-            if (p3.style.display == "none") {
-                p1.style.display = "none";
-                p3.style.display = "block";
-                p2.style.display = "none";
-            } else {
-                p2.style.display = "none";
-                p1.style.display = "none";
-                p3.style.display = "none";
-            }
-        }
-
-    </script> -->
-
-
+        </section>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
