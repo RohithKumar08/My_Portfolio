@@ -61,15 +61,19 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   height: 100px;
   overflow: hidden;
+}
+.navbar a{
+  flex: 1;
 }
 .navbar a,
 .subnavbtn {
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  padding: 14px 25px;
+  padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -89,6 +93,13 @@ body {
   background:#8CA6DB;
   color: #000000;
   border-radius:5px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar a,
+  .subnavbtn {
+    padding: 8px 6px;
+    font-size: 7px;
+  }
 }
 .common-div {
   flex-direction: row;
