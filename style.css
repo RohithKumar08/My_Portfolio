@@ -13,37 +13,37 @@ body {
 
 /* navbar-css */
 
-.nav-fixed {
+ .nav-fixed {
   position: fixed;
   top: 0;
   width: 100dvw;
   z-index: 999;
 }
-#trapezoid {
+ #trapezoid {
+  border: 80px solid transparent;
+  height: 0;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
-  border: 80px solid transparent;
-  border-top: 0 solid;
   border-bottom: 100px solid rgba(1, 1, 1, 0.858);
+  border-top: 0 solid;
   -webkit-border-radius: 20px 20px 0 0;
   border-radius: 20px 20px 0 0;
   font: normal 100%/JetBrains Mono;
   color: rgba(0,0,0,0.7);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  margin-top:-53px;
-  width: 100%;
   position: relative;
+  transform: rotateX(180deg);
   transition: all 0.7s ease;
   padding-left:7%;
-}
-#trapezoid a, .subnavbtn {
- -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
+  text-overflow: clip;
+  margin-top:-53px;
+ } 
+ #trapezoid a, .subnavbtn { 
+   transform: rotateX(180deg); 
+ }
+ .navbar a {
+  float: left;
+  flex: 1;
 }
 .sub-home {
   display: none;
@@ -59,14 +59,8 @@ body {
   margin-top: 53px;
 }
 .navbar {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
   height: 100px;
   overflow: hidden;
-}
-.navbar a{
-  flex: 1;
 }
 .navbar a,
 .subnavbtn {
@@ -79,9 +73,6 @@ body {
   letter-spacing: 4px;
   transition: all 0.5s ease;
 }
-.navbar a {
-  float: left;
-}
 .subnavbtn {
   border: none;
   outline: none;
@@ -93,13 +84,6 @@ body {
   background:#8CA6DB;
   color: #000000;
   border-radius:5px;
-}
-@media only screen and (max-width: 768px) {
-  .navbar a,
-  .subnavbtn {
-    padding: 8px 6px;
-    font-size: 7px;
-  }
 }
 .common-div {
   flex-direction: row;
@@ -119,6 +103,7 @@ body {
   left: 5%;
 }
 .slideleft {
+  opacity: 0;
   animation: slideleft 1s ease forwards;
 }
 @keyframes slideleft{
@@ -159,6 +144,9 @@ hr{
 }
 span{
   color: #dc143c; 
+}
+#new-span{
+  color: #ffff00;
 }
 
 /* About - css */
@@ -277,7 +265,7 @@ li h2 {
   flex-direction: row;
   width: 100dvw;
   color: #ffffff;
-  width: 100%;
+  width: 100dvw;
   padding-top: 100px;
   padding-left: 5%;
 }
@@ -356,18 +344,35 @@ li h2 {
   color: #ff0000;
   margin-left: 30px;
 }
-@media (max-width: 800px) {
-  .Contact {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
 .page{
   display: none;
 }
 #Home{
   display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar a,
+  .subnavbtn {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px 8px;
+  }
+  .project-text h2{
+    font-size: 40px;
+  }
+  .project-text p{
+    font-size: 25px;
+  }
+  .Contact {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 
